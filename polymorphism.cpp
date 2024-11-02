@@ -20,6 +20,11 @@ public:
     {
         cout << "string : " << x << endl;
     }
+
+    void operator+(char q)
+    {
+        cout << "char : " << q << endl;
+    }
 };
 
 int main()
@@ -30,5 +35,7 @@ int main()
     p.show('a');
 
     p.show("Puneeth");
+
+    p + 'a';
     return 0;
 }
