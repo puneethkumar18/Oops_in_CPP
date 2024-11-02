@@ -20,6 +20,22 @@ public:
         this->name = &name;
     }
 
+    // // deep copy
+    // Teacher(Teacher &teacherObj)
+    // {
+    //     name = new string;
+    //     *this->name = *teacherObj.name;
+    //     dept = teacherObj.dept;
+    //     subject = teacherObj.subject;
+    //     salary = teacherObj.salary;
+    // }
+
+    // destructor
+    ~Teacher()
+    {
+        cout << "Hi, I have Deleted Everthing!" << endl;
+    }
+
     // methods/member functions
     void changeDeparment(string newDept)
     {
